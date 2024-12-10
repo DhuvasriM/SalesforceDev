@@ -1,6 +1,6 @@
 <template>
-    <lightning-card title="Update Patient List">
-        <div class="slds-m-around_medium">
+    <lightning-card title="Update Patient List" class="slds-card" icon-name='custom:custom63'>
+        <div class="slds-m-around_medium datatable-div">
             <template if:true={patientList.data}>
                 <lightning-datatable
                 is-loading="true"
@@ -10,7 +10,7 @@
                 onsave={saveHandler}
                 draft-values={draftValues}
                 sorted-by="FirstName"
-                sorted-direction="asc">
+                sorted-direction="asc" class="custom-datatable">
                 </lightning-datatable>
             </template>
         </div>        

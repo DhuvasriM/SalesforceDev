@@ -1,0 +1,27 @@
+/* Apply custom styles to the lightning-datatable */
+.custom-datatable {
+    --slds-c-background-color: #f4f6f9; /* Change background color */
+    --slds-c-text-color: #3c3c3c; /* Custom text color */
+    font-family: 'Arial', sans-serif; /* Change the font */
+  }
+  
+  /* Style the headers */
+  .custom-datatable th {
+    background-color: #006ed2; /* Blue background for headers */
+    color: white; /* White text color for header */
+    font-weight: bold; /* Bold text for headers */
+  }
+  
+  /* Add alternating row colors */
+  .custom-datatable tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+  }
+  
+  .custom-datatable tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+  }
+  
+  /* Add custom hover effect for rows */
+  .custom-datatable tbody tr:hover {
+    background-color: #cfe2f3; /* Light blue hover effect */
+  }
